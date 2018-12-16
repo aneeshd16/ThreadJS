@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>ThreadJS Demo</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="../dist/threadjs.js"></script>
+    <script src="./main.js"></script>
+</head>
+
+<body>
+    <input type="number" name="n" _value="10" value="1000000000" id="numberInput">
+    <button onclick="calcuateMainThread()">Calculate sum on main thread</button>
+    <button onclick="calcuateSeparateThread()">Calculate sum on separate thread</button>
+    <button onclick="calcuateSeparateThreadPool()">Calculate using pool of 10 threads</button>
+    <p style="position: fixed; top: 200px;">
+        <img id="counter" src="https://media.giphy.com/media/3y0oCOkdKKRi0/giphy.gif" alt="">
+    </p>
+    <table>
+        <tr>
+            <th>Using</th>
+            <th>Time taken</th>
+            <th>Computed Value</th>
+        </tr>
+        <tr>
+            <td>Main Thread</td>
+            <td id="timeMain"></td>
+            <td id="sumMain"></td>
+        </tr>
+        <tr>
+            <td>Worker thread</td>
+            <td id="timeWorker"></td>
+            <td id="sumWorker"></td>
+        </tr>
+        <tr>
+            <td>Worker thread Pool</td>
+            <td id="timeWorkerPool"></td>
+            <td id="sumWorkerPool"></td>
+        </tr>
+    </table>
+</body>
+
+</html>
