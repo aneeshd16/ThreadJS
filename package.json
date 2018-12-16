@@ -56,7 +56,6 @@
     "mainVarName": "Thread"
   },
   "dependencies": {
-    "growl": "^1.10.5",
     "shortid": "^2.2.14"
   }
 }
